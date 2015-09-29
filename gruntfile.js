@@ -52,6 +52,13 @@ module.exports = function(grunt) {
         src: ['tmp/app.js'],
         dest: 'public/resources/js/show-posts.js',
       },
+    },
+
+    copy: {
+      main: {
+        src: 'app/index.html',
+        dest: 'public',
+      }
     }
   });
 
@@ -62,5 +69,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('can-compile');
 
-  grunt.registerTask('default', ['cancompile', 'requirejs', 'concat', 'sass', 'watch']); 
+  grunt.registerTask('default', ['cancompile', 'requirejs', 'concat', 'sass', 'copy', 'watch']); 
 };

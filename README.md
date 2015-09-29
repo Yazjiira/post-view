@@ -18,9 +18,12 @@ Getting the application up and running should be fairly easy.
 ## Things that I tried to do
 - Posts load 12 at a time when you load
 - Code is separated out into modules to allow for easier testing later
+- Loading state when fetching posts
+- CSS3 loading spinner
+- Some animation for initial load
 
 ## TODOS/Other Considerations
-- Add loading states for when calls are being made
+- -Add loading states for when calls are being made-
 - Add some more error handling to the server
 - Add drill down views (ex: click on a square and then have a modal w/ the details)
 - Add state for when you've reached the last call for that site (no more new posts to get from server)

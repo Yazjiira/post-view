@@ -1,6 +1,13 @@
-<ul class="post-list">
+<ul class="post-list" style="height: {{listHeight}};">
   {{#each posts}}
     <li class="post"><a><post-item></post-item></a></li>
   {{/each}}
 </ul>
-<button class="load-more-button" can-click="updatePostList">Load More</button>
+
+{{#if isLoading}}
+  <p class="loading-message">
+    <span class="load-spinner"></span>
+    <span class="load-message">Loading</span>
+  </p>
+{{/if}}
+<button class="load-more-button" {{#if isLoading}}disabled{{/if}} can-click="updatePostList">Load More</button>

@@ -7,14 +7,10 @@ mkdir -p app/js/tmp
 mkdir -p tmp
 
 #grunt tasks
+grunt clean
 grunt cancompile
 grunt requirejs
 grunt sass
-grunt concat
 grunt copy
-
-echo "build successful, cleaning up"
-rm -rf app/js/tmp
-rm -rf tmp
 
 exit 0

@@ -1,0 +1,97 @@
+@-webkit-keyframes rotate-cw {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-cw {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-cc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-cc {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.load-spinner {
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+    border-radius: 100%;
+    background: transparent;
+    border: 2px solid #FF5B40;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-animation: rotate-cw 1.5s infinite linear;
+	animation: rotate-cw 1.5s infinite linear;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+
+    &:before, &:after {
+	  display: block;
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  margin: auto;
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+    }
+
+	&:before {
+	  width: 75%;
+	  height: 75%;
+	  background: transparent;
+	  border-radius: 100%;
+	  border: 3px solid #CC1418;
+	  border-left-color: transparent;
+	  border-right-color: transparent;
+	  -webkit-animation: rotate-cc .8s infinite linear;
+	  animation: rotate-cc .8s infinite linear;
+	  -webkit-transform: translateZ(0);
+	  transform: translateZ(0);
+	}
+
+	&:after {
+	  width: 20%;
+	  height: 20%;
+	  background: #3D7699;
+	  -webkit-animation: rotate-cc 3s infinite linear;
+	  animation: rotate-cc 3s infinite linear;
+	  -webkit-transform: translateZ(0);
+	  transform: translateZ(0);
+	}
+}

@@ -11,6 +11,7 @@ grunt cancompile
 grunt requirejs
 grunt sass
 grunt concat
+grunt copy
 
 echo "build successful, cleaning up"
 rm -rf app/js/tmp

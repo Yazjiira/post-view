@@ -57,7 +57,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         src: 'app/index.html',
-        dest: 'public',
+        dest: 'public/index.html',
       }
     }
   });

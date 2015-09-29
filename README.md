@@ -11,6 +11,9 @@ Getting the application up and running should be fairly easy.
   git clone https://github.com/Yazjiira/post-view.git
   cd post-view
 
+  #if you do not already have sass gem installed
+  gem install sass
+
   #set up the app and serve it
   ./setup && ./serve
 ```

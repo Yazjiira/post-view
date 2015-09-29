@@ -21,6 +21,6 @@ define(function() {
       output = output.concat(' ' + nextWord);
     }
 
-    return (output + ' ...').trim();
+    return (output + '...').trim();
   };
 });

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#cleanup
+rm -rf app/js/tmp
+rm -rf tmp
+rm -rf .sass-cache
+rm -rf node_modules
+rm -rf app/js/vendor/bower_components
+
+exit 0

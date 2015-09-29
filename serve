@@ -1,0 +1,11 @@
+#!/bin/bash
+
+./build
+
+if [[ $? -eq 0 ]];then
+	echo "build successful, starting server"
+	node server.js
+	exit 0;
+fi
+
+exit 1;

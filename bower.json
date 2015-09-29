@@ -1,0 +1,22 @@
+{
+  "name": "post_feed",
+  "version": "0.0.0",
+  "authors": [
+    "Yazjiira <brodie.yazaki@gmail.com>"
+  ],
+  "description": "adobe project",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "CanJs"
+  ],
+  "dependencies": {
+    "canjs": "~2.2.9",
+    "jquery": "~2.1.4"
+  }
+}

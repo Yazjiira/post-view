@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "cleaning caches"
+npm cache clean
+bower cache clean
+
+echo "installing npm and bower modules"
+npm install
+bower install
+

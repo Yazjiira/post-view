@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "starting build"
+
+#some bootstrap
+mkdir -p app/js/tmp
+mkdir -p tmp
+
+#grunt tasks
+grunt cancompile
+grunt requirejs
+grunt sass
+grunt concat
+
+echo "build successful, cleaning up"
+rm -rf app/js/tmp
+rm -rf tmp
+
+exit 0
